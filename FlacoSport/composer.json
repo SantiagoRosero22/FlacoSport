@@ -1,0 +1,23 @@
+{
+    "name": "mycompany/flacosport",  
+    "require": {
+        "php": ">=8.2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1", 
+        "mockery/mockery": "^1.6.11" 
+    },
+    "autoload": {
+        "psr-4": {
+            "MiProyecto\\": "FLACOSPORT/" 
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MiProyecto\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --bootstrap tests/bootstrap.php"
+}
+}
